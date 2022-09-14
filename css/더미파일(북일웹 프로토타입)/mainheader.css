@@ -1,0 +1,129 @@
+@font-face {
+    font-family: "pretendard";
+    src: url('../../font/Pretendard-Regular.ttf');
+}
+/* @font-face{
+    font-family: "pretendard_B";
+    src: url('../../font/Pretendard-Black.ttf');
+} */
+@font-face{
+    font-family: "pretendard_D";
+    src: url('../../font/Pretendard-Bold.ttf');
+}
+@import url('https://fonts.googleapis.com/css2&family=Archivo+Black&family=Permanent+Marker?family=Anton&family=Black+Han+Sans&family=Cabin:wght@500&family=Hahmlet&family=Noto+Sans+KR&family=Oswald&family=Roboto&display=swap');
+.main_header{
+    position: relative;
+    z-index:2;
+    width:100%;
+    height: 100vh;
+    overflow: hidden;
+}
+.backgroundimg{
+    display:flex;
+    flex-wrap:nowrap;
+    position: relative;
+    height:10rem;
+    top:20rem;
+    background:url('../../img/bugil_logo_semiclear.png') center center no-repeat;
+}
+.main_inner{
+    height: 100vh;
+    display:flex;
+    margin:0rem;
+    flex-direction: column;
+    position:relative;
+
+    top:-103.5%;
+    align-items: center;
+    text-align: center;
+}
+.main_title{
+    font-family: 'Archivo Black', sans-serif;
+    font-weight: bold;
+    display:flex;
+    color:black;
+    position:relative;
+    top:0.30%;
+    font-size:7.5rem;
+}
+.sub_title{
+    font-family: "pretendard";
+    text-align: center;
+    display:flex;
+    color:black;
+    position: relative;
+    top:0.33%;
+    font-size: 1.7rem;
+}
+.header_nav_head{
+    height: 4.3rem;
+    width:20.5rem;
+    position: fixed;
+    display:flex;
+    align-items: center;
+    top:5.3rem;
+    backdrop-filter: blur(0.5rem);
+    background-color: rgba(255, 255, 255,0.8);
+    border: 0.5rem solid rgba(243, 115, 33,1);
+    border-top: 0rem solid rgba(243,115,33,0.7);
+    border-bottom-left-radius: 2.5rem;
+    border-bottom-right-radius: 2.5rem;
+}
+.header_nav>li{
+    display: inline-block;
+    position: relative;
+    width:4.4rem;
+    height:2.7rem;
+    border-radius: 2rem;
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: center;
+    line-height: 2.7rem;
+    font-family: 'pretendard';
+    letter-spacing: 0.05rem;
+    background-color: rgba(235, 235, 235,0.7);
+    border: 0.1rem solid rgba(0,0,0,1);
+    color:rgb(0,0,0);
+    left:0.5rem;
+    transform:translateY(0);
+    transition: all .3s;
+}
+.header_nav>li>div{
+    width: 0;
+    height: 0;
+    position: relative;
+    left:calc((4.4rem - 0.75rem)/2);
+    top:0.2rem;
+    border-left: 0.25rem solid transparent;
+    border-right: 0.25rem solid transparent;
+    border-top: calc(0.25rem * 1.732) solid rgba(247, 129, 33,0);
+}
+.header_nav>li:nth-child(1){
+    position: relative;
+    left:0.5rem;
+}
+.header_nav>li:hover{
+    transform:translateY(10%);
+    transition: all .3s;
+    cursor:pointer;
+    font-family:'pretendard_D';
+    background-color: #ffffff;
+    border: 0.1rem solid rgb(243, 115, 33);
+    color:rgb(0, 0, 0);
+}
+
+.header_nav_body{
+    height: 50vh;
+    width: 20rem;
+    color: white;
+    border: 0.5rem solid rgba(243, 115, 33,1);
+    border-bottom: 0.25rem solid rgba(243, 115, 33,0.7);
+    border-top-right-radius: 3rem;
+    border-top-left-radius: 3rem;
+}
+.Sidebar{
+    width: 4.5rem;
+    height: 100vh;
+    position:fixed;
+    border-right: 0.5rem solid #000;
+}
